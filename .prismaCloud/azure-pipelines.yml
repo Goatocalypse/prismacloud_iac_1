@@ -1,5 +1,5 @@
 # Starter pipeline
-# Start with a minimal pipeline that you can cuustomize to build and deploy
+# Start with a minimal pipeline that you can customize to build and deploy your code
 # Add steps that build, ruin tests, deploy and more:
 # https://aka.ms/yaml
 
@@ -12,7 +12,7 @@ pool:
 steps:
   - task: Prisma Cloud IaC Scan@3
     inputs:
-      Path: '.'  # The .prismaCloud/conflig.yml sets the subdirectory
+      Path: '.'  # The .prismaCloud/config.yml sets the subdirectory
       prismaCloudService: 'prismacloud_iac_1'
       High: '0'
       Medium: '0'
